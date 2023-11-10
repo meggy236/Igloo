@@ -1,0 +1,258 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 14px;
+	list-style-type: none;
+}
+.center{
+	display:block;
+	margin: 0 auto;
+}
+body{
+	background-color:Darkcyan;
+}
+
+.headerMenu{
+	background-color:DarkCyan;
+	height: 55px;
+	margin:auto;
+	border-bottom: 0px;
+	padding-left: auto;
+	padding-right: auto;
+	width: 100%;
+}
+#wrapper{
+	margin-left:auto;
+	margin-right: auto;
+	width:  600px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.igloologo{
+	width: 72px;
+}
+.logo img{
+	width: auto;
+	height: 60px;
+	padding-top: 2px;
+	
+}
+.navbar{
+  list-style-type:none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkcyan;
+  top: 0;
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-topbar{
+	visibility: hidden;
+}
+
+.nav-bottombar{
+	  list-style-type:none;
+	  margin: auto;
+	  padding: 0;
+	  overflow: hidden;
+	  position:fixed;
+	  background-color: darkcyan;
+	  bottom: 0;
+	  width: 100%;
+	  font-weight: bold;
+	  color:black;
+	   
+	   
+	  
+}
+@media (min-width: 768px) {
+    .nav-topbar{
+	  list-style-type:none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: darkcyan;
+	  top: 0;
+	  width: 100%;
+	  font-weight: bold;
+	  visibility:visible;
+}
+}
+@media screen and (min-width: 768px){
+	.nav-bottombar{
+	  list-style-type:none;
+	  margin: auto;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: darkcyan;
+	  bottom: 0;
+	  width: 100%;
+	  font-weight: bold;	
+	  color:black;
+	  visibility: hidden;
+}
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+  font-size: 18px ;
+	
+}
+
+li a:hover:not(.active) {
+  background-color: #007171;
+}
+
+.active {
+  background-color: #002F2F;
+}
+
+
+input[type=text], input[type=password], input[type=date], input[type=telephone] {
+  width: 100%;
+  padding: 15px;
+  margin: 4px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #E7E7E7;
+  box-sizing: border-box;
+}
+
+
+input[type=text]:focus, input[type=password]:focus , input[type=date]:focus , input[type=telephone]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+button {
+  background-color: darkcyan;
+  color: black;
+  margin: 0px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.cancelbtn {
+  padding: 7px 10px;
+  background-color: #95171F;
+}
+
+.createaccbtn{
+	background-color: #11B38D;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 40px 40px;
+  margin: 20px;
+  background-color:cadetblue;
+	
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: Darkcyan;
+  padding-top: 50px;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+  border-radius: 7px;
+  padding: 0px; 
+  height: 400px;
+  font-size: 25px;
+	
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 75px;
+  top: 60px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #95171F;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn, .createaccbtn {
+     width: 50%;
+  }
+}
+#Signintxt{
+	font-size: 19px;
+}
+.center {
+}
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+}
+
+::-webkit-scrollbar-track {
+border: 2px solid #008B8B;
+border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #008B8B;  
+border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #008B8B;  
+}

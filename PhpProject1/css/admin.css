@@ -1,0 +1,177 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 14px;
+	list-style-type:none;
+}
+
+body{
+	background-color: #3D4D53;
+}
+.headerMenu{
+	background-color:DarkCyan;
+	height: 55px;
+	border-bottom: 0px;
+	padding-left: auto;
+	padding-right: auto;
+	width: 100%;
+}
+#wrapper{
+	margin-left:auto;
+	margin-right: auto;
+	width: 500px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.igloologo{
+	width: 72px;
+}
+.logo img{
+	width: auto;
+	height: 60px;
+	padding-top: 2px;
+	
+}
+.navbar{
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkcyan;
+  top: 0;
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.nav-topbar{
+	visibility: hidden;
+}
+
+.nav-bottombar{
+	  list-style-type:none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  position:fixed;
+	  background-color: darkcyan;
+	  bottom: 0;
+	  width: 100%;
+	  font-weight: bold;
+	  color:black;
+}
+@media (min-width: 768px) {
+    .nav-topbar{
+	  list-style-type:none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: darkcyan;
+	  top: 0;
+	  width: 100%;
+	  font-weight: bold;
+	  visibility:visible;
+}
+}
+@media screen and (min-width: 768px){
+	.nav-bottombar{
+	  list-style-type:none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: darkcyan;
+	  bottom: 0;
+	  width: 100%;
+	  font-weight: bold;	
+	  color:black;
+	  visibility: hidden;
+}
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 17px 16px;
+  text-decoration: none;
+  font-size: 18px ;
+  
+}
+
+li a:hover:not(.active) {
+  background-color: #007171;
+}
+
+.active {
+  background-color: #007171;
+}
+
+.container {
+  margin: 50px 15px 20px 15px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color:cadetblue;
+}
+
+@media only screen and (min-width: 300px){
+	.usrpfp{
+		width: 75px;
+	}
+}
+@media only screen and (min-width: 600px){
+	.container{
+		margin: 50px 100px 20px 100px;
+	}
+}
+@media only screen and (min-width:1000px){
+	.container {
+  margin: 50px 300px 20px 300px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color:cadetblue;
+}
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+}
+
+::-webkit-scrollbar-track {
+border: 2px solid #008B8B;
+border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #008B8B;  
+border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #008B8B;  
+}
